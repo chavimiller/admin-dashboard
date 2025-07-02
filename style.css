@@ -26,6 +26,20 @@ ul, li {
     list-style: none;
 }
 
+.general-nav li img {
+    margin-right: 16px;
+    vertical-align: middle;
+    width: 20px;
+    height: auto;
+}
+
+.user-settings li img {
+    margin-right: 16px;
+    vertical-align: middle;
+    width: 20px;
+    height: auto;
+}
+
 .page-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -46,6 +60,12 @@ ul, li {
 
 .logo-group {
     display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-group img {
+    width: 50px;
 }
 
 .sidebar > div {
@@ -59,7 +79,9 @@ ul, li {
 }
 
 .sidebar .general-nav {
+    display: flex;
     padding: 50px 0;
+    
 }
 
 .top-bar {
@@ -67,6 +89,92 @@ ul, li {
     grid-area: 1/2/2/3;
     box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.1);
     z-index: 1;
+
+}
+
+.bar-one {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 15px 50px;
+}
+
+.bell-icon {
+    width: 22px;
+    height: auto;
+}
+
+.bar-one div {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.05em;
+}
+
+.search-icon {
+    width: 22px;
+    height: auto;
+}
+
+.avatar-corner {
+    width: 48px;
+    height: auto;
+}
+
+input {
+    all: unset;
+    background-color: var(--gray-powder);
+    height: 30px;
+    width: 680px;
+    border-radius: 20px;
+}
+
+.bar-two {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 10px 50px;
+}
+
+.bar-two img {
+    width: 65px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.bar-two > div {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: .9em ;
+    gap: 8px;
+}
+
+.greeting > :nth-child(2) {
+    font-size: 1.8em;
+  
+}
+
+button {
+    all: unset;
+    cursor: pointer;   
+    background-color: var(--red-pantone);
+    border-radius: 18px;
+    width: 85px;
+    height: 35px;
+    text-align: center;
+    color: var(--white-powder);
+    font-size: .9em;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
 }
 
 .content-area {
@@ -104,10 +212,28 @@ ul, li {
     border-left: var(--orange-peel) solid 8px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 12px;
     padding: 20px;
     box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.3);
     font-size: .9em;
+}
+
+.card :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.card img {
+    width: 18px;
+    height: auto;
+}
+
+.corner-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
 }
 
 p {
@@ -129,6 +255,8 @@ p {
     padding-bottom: 20px;
 }
 
+
+
 .trending {
     display: flex;
     flex-direction: column;
@@ -140,6 +268,53 @@ p {
     border-radius: 8px;
     height: 100%;
     display: flex;
-    padding: 12px;
+    padding: 24px;
     box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.side-card .users {
+    display: flex;
+    gap: 12px;
+}
+
+.side-card img {
+    width: 36px;
+    height: auto;
+}
+
+.user-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements > .side-card {
+    font-size: .7em ;
+    gap: 14px;
+    
+}
+
+.announcements  p {
+    font-size: .6em;
+}
+
+hr {
+   opacity: 50%; 
+}
+
+.trending-user {
+    font-size: .7em;
+    padding-bottom: 3px;
+}
+
+.trending-user + div {
+    font-size: .6em;
+    font-weight: 300;
+}
+
+.trending > .side-card {
+    gap: 16px;
+    justify-content: center;
 }

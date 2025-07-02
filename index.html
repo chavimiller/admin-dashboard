@@ -16,88 +16,217 @@
     <div class="page-container">
       <div class="sidebar">
         <div class="logo-group">
-          <img />
+          <img src="./icons/OrangeLogo.svg" alt="OrangeLogo" />
           <div>Dashboard</div>
         </div>
         <ul class="general-nav">
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
+          <li><img src="./icons/HomePage.svg" alt="Home" /> Home</li>
+          <li><img src="./icons/Account.svg" alt="Account" />Profile</li>
+          <li><img src="./icons/Message.svg" alt="Messages" />Messages</li>
+          <li><img src="./icons/History.svg" alt="History" />History</li>
+          <li><img src="./icons/Task.svg" alt="Tasks" />Tasks</li>
+          <li>
+            <img src="./icons/Community.svg" alt="Communities" />Communities
+          </li>
         </ul>
         <ul class="user-settings">
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+          <li><img src="./icons/Settings.svg" alt="Settings" />Settings</li>
+          <li><img src="./icons/Support.svg" alt="Support" />Support</li>
+          <li><img src="./icons/Privacy.svg" alt="Privacy" />Privacy</li>
         </ul>
       </div>
-      <div class="top-bar"></div>
+      <div class="top-bar">
+        <div class="bar-one">
+          <div>
+            <img class="search-icon" src="./icons/Search.svg" alt="Search" />
+            <input />
+          </div>
+          <div>
+            <img src="./icons/Bell.svg" alt="Bell" class="bell-icon" />
+            <img src="./icons/Avatar.svg" alt="Avatar" class="avatar-corner" />
+            <div>Chavi Weisman</div>
+          </div>
+        </div>
+        <div class="bar-two">
+          <div>
+            <img src="./icons/Avatar.svg" alt="OrangeLogo" />
+            <div class="greeting">
+              <div>Hi there,</div>
+              <div>Chavi Weisman (@chavi)</div>
+            </div>
+          </div>
+          <div class="button-group">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </div>
 
       <div class="content-area">
         <div class="content-grid">
           <div class="title">Your Projects</div>
           <div class="project-cards">
             <div class="card">
-              <div class="card-title">Super Cool Project</div>
-              <p>
-                A sleek web app that tracks user habits and visualizes progress
-                with interactive charts. Built with React and CSS Grid for
-                maximum coolness.
-              </p>
+              <div>
+                <div class="card-title">Super Cool Project</div>
+                <p>
+                  A sleek web app that tracks user habits and visualizes
+                  progress with interactive charts. Built with React and CSS
+                  Grid for maximum coolness.
+                </p>
+              </div>
+              <div class="corner-actions">
+                <img src="./icons/Favorite.svg" alt="Favorite" />
+                <img src="./icons/Eye.svg" alt="Eye" />
+                <img src="./icons/Branch.svg" alt="Branch" />
+              </div>
             </div>
 
             <div class="card">
-              <div class="card-title">Less Cool Project</div>
-              <p>
-                An early attempt at making a to-do list app. Features basic CRUD
-                operations and a not-so-great color scheme. But hey, it works!
-              </p>
+              <div>
+                <div class="card-title">Less Cool Project</div>
+                <p>
+                  An early attempt at making a to-do list app. Features basic
+                  CRUD operations and a not-so-great color scheme. But hey, it
+                  works!
+                </p>
+              </div>
+              <div class="corner-actions">
+                <img src="./icons/Favorite.svg" alt="Favorite" />
+                <img src="./icons/Eye.svg" alt="Eye" />
+                <img src="./icons/Branch.svg" alt="Branch" />
+              </div>
             </div>
 
             <div class="card">
-              <div class="card-title">Impossible App</div>
-              <p>
-                This project was an overly ambitious calendar-scheduling AI
-                assistant... that never quite worked. Learned a lot about API
-                limits and error handling though!
-              </p>
+              <div>
+                <div class="card-title">Impossible App</div>
+                <p>
+                  This project was an overly ambitious calendar-scheduling AI
+                  assistant... that never quite worked. Learned a lot about API
+                  limits and error handling though!
+                </p>
+              </div>
+              <div class="corner-actions">
+                <img src="./icons/Favorite.svg" alt="Favorite" />
+                <img src="./icons/Eye.svg" alt="Eye" />
+                <img src="./icons/Branch.svg" alt="Branch" />
+              </div>
             </div>
 
             <div class="card">
-              <div class="card-title">Easy Peasy App</div>
-              <p>
-                A simple note-taking app with local storage support. Fast,
-                minimal, and surprisingly satisfying to build in under a day.
-              </p>
+              <div>
+                <div class="card-title">Easy Peasy App</div>
+                <p>
+                  A simple note-taking app with local storage support. Fast,
+                  minimal, and surprisingly satisfying to build in under a day.
+                </p>
+              </div>
+              <div class="corner-actions">
+                <img src="./icons/Favorite.svg" alt="Favorite" />
+                <img src="./icons/Eye.svg" alt="Eye" />
+                <img src="./icons/Branch.svg" alt="Branch" />
+              </div>
             </div>
 
             <div class="card">
-              <div class="card-title">Ad Blocker</div>
-              <p>
-                A browser extension concept for blocking popups and intrusive
-                ads. Focused on DOM manipulation and event listeners.
-              </p>
+              <div>
+                <div class="card-title">Ad Blocker</div>
+                <p>
+                  A browser extension concept for blocking popups and intrusive
+                  ads. Focused on DOM manipulation and event listeners.
+                </p>
+              </div>
+              <div class="corner-actions">
+                <img src="./icons/Favorite.svg" alt="Favorite" />
+                <img src="./icons/Eye.svg" alt="Eye" />
+                <img src="./icons/Branch.svg" alt="Branch" />
+              </div>
             </div>
 
             <div class="card">
-              <div class="card-title">Money Maker</div>
-              <p>
-                A mock stock portfolio tracker that pulls fake financial data
-                and displays it in fancy charts. Built as a frontend practice
-                project using Chart.js.
-              </p>
+              <div>
+                <div class="card-title">Money Maker</div>
+                <p>
+                  A mock stock portfolio tracker that pulls fake financial data
+                  and displays it in fancy charts. Built as a frontend practice
+                  project using Chart.js.
+                </p>
+              </div>
+              <div class="corner-actions">
+                <img src="./icons/Favorite.svg" alt="Favorite" />
+                <img src="./icons/Eye.svg" alt="Eye" />
+                <img src="./icons/Branch.svg" alt="Branch" />
+              </div>
             </div>
           </div>
           <div class="side-content">
             <div class="announcements">
               <div class="title">Announcements</div>
-              <div class="side-card"></div>
+              <div class="side-card">
+                <div>
+                  <div>Site Maintenance</div>
+                  <p>
+                    Our servers will be undergoing routine maintenance this
+                    weekend. Expect brief periods of downtime between 2 AM and 4
+                    AM.
+                  </p>
+                </div>
+                <hr />
+                <div>
+                  <div>Community Share Day</div>
+                  <p>
+                    Join us this Friday for Community Share Day! Showcase your
+                    projects, give feedback, and connect with other developers.
+                  </p>
+                </div>
+                <hr />
+                <div>
+                  <div>Updated Privacy Policy</div>
+                  <p>
+                    We've made some updates to our privacy policy to better
+                    explain how we handle your data. Please review the changes
+                    at your convenience.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="trending">
               <div class="title">Trending</div>
-              <div class="side-card"></div>
+              <div class="side-card">
+                <div class="users">
+                  <img src="./icons/UserOne.svg" alt="UserOne" />
+                  <div class="user-right">
+                    <div class="trending-user">@codeMaster99</div>
+                    <div>Dark Mode Dashboard</div>
+                  </div>
+                </div>
+
+                <div class="users">
+                  <img src="./icons/UserTwo.svg" alt="UserTwo" />
+                  <div class="user-right">
+                    <div class="trending-user">@frontend_fanatic</div>
+                    <div>CSS Animation Kit</div>
+                  </div>
+                </div>
+
+                <div class="users">
+                  <img src="./icons/UserThree.svg" alt="UserThree" />
+                  <div class="user-right">
+                    <div class="trending-user">@bugHunter</div>
+                    <div>Error Page Builder</div>
+                  </div>
+                </div>
+
+                <div class="users">
+                  <img src="./icons/UserFour.svg" alt="UserFour" />
+                  <div class="user-right">
+                    <div class="trending-user">@data_diva</div>
+                    <div>Crypto Price Tracker</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
